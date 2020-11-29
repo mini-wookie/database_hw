@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title> Member_insert </title>
+	</head>
+
+	<body>
+		<br><h2><center> 회원등록 화면 </center> </h2><hr>
+		
+		<form method = "POST" action = "guest_tb.php">
+		<center>
+		<table border = 1 bordercolor = "blue" width = 700 cellspacing = 1 cellpadding = 5>
+		
+		<tr>
+			<td width = 450 align = center> 아이디  </td>
+			<td width = 330>
+				<input type = "text" size = 10 maxlength = 10 name = "id">
+			</td>
+			
+			<td width = 200 align = center> 성명  </td>
+			<td width = 300>
+				<input type = "text" size = 10 maxlength = 10 name = "name">
+			</td>
+		</tr>
+		
+		<tr>
+			<td align = center> 닉네임 </td>
+			<td>
+				<input type = "text" size = 10 maxlength = 10 name = "nick">
+			</td>
+			<td align = center> 생일 </td>
+			<td>
+				<input type = "text" size = 10 maxlength = 10 name = "birth">
+			</td>
+		</tr>
+			<td align = center> 핸드폰  </td>
+			<td>
+            <input type="text" size=14 name="pn" maxlength=20>
+			</td>
+		<tr>
+			<td align=center> 성별  </td>
+			<td>
+			<input type ="radio" name="sex" value = "M" checked> M
+			<input type ="radio" name="sex" value = "F"> F
+			</td>
+		</tr>
+         
+		<tr>
+			<td align=center> 주소  </td>
+			<td colspan=3><input type="text" size=62 name="addr"></td>
+		</tr>
+		</table><br>
+		
+		<table border = 0 width = 800>
+			<tr>
+				<td align = center>
+					<input type = "submit" value = "회원등록">
+					<input type = "reset" value = "다시작성 ">
+					<input type= "button" value= "뒤로가기" onClick="history.go(-1)"> 
+				</td>
+			</tr>
+			</table>
+			<center>
+				<input type = "hidden" name = "thema" value = "회원등록 서식">
+			</center>
+			</form>
+		</body>
+	</html>
+	

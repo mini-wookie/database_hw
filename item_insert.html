@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title> Item_insert </title>
+	</head>
+
+	<body>
+		<br><h2><center> 물품등록 화면 </center> </h2><hr>
+		
+		<form method = "POST" action = "item_tb.php">
+		<center>
+		<table border = 1 bordercolor = "blue" width = 700 cellspacing = 1 cellpadding = 5>
+		<tr>
+			<td width = 100 align = center> 상품코드  </td>
+			<td width = 200>
+				<input type = "text" size=20 name = "item_code">
+			</td>
+		</tr>
+		<tr>
+			<td width = 100 align = center> 상품명  </td>
+			<td width = 200>
+				<input type = "text" size=20 name = "item_name">
+			</td>
+		</tr>	
+		<tr>
+			<td width = 100 align = center> 가격  </td>
+			<td width = 200>
+				<input type = "number" size=20 name = "item_cost">
+			</td>
+		</tr>
+		<tr>
+			<td width = 100 align = center> 수량  </td>
+			<td width = 200>
+				<input type = "number" name = "item_quantity">
+			</td>
+		</tr>
+		</table><br>
+		
+		<table border = 0 width = 800>
+			<tr>
+				<td align = center>
+					<input type = "submit" value = "물품등록">
+					<input type = "reset" value = "다시작성">
+					<input type= "button" value = "뒤로가기" onClick="history.go(-1)">
+				</td>
+			</tr>
+			</table>
+			<center>
+				<input type = "hidden" name = "thema" value = "물품등록 서식">
+			</center>
+			</form>
+		</body>
+	</html>
+	
